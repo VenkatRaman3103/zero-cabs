@@ -1,0 +1,160 @@
+ .home-page-featured-image-doodle-section {
+
+     grid-column: 14 / 20;
+     grid-row: 8/21;
+
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+
+     .home-page-featured-image-doodle-description {}
+
+     .home-page-featured-image-links-stack-section {
+         width: 100%;
+         height: 50px;
+
+         .home-page-featured-image-links-wrapper {
+             width: 100%;
+             height: 100%;
+
+             display: flex;
+             flex-direction: row;
+             justify-content: start;
+
+             cursor: pointer;
+
+
+             .home-page-featured-image-links-block {
+                 width: 60%;
+                 height: 100%;
+
+                 border-radius: 500px;
+
+                 background-color: #ffffff;
+
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                 z-index: 2;
+
+                 cursor: pointer;
+
+                 box-shadow: 0px 4px 8px -2px rgba(9, 30, 66, 0.25), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+
+             }
+
+             .home-page-featured-image-arrow-block {
+                 width: 49px;
+                 height: 49px;
+
+                 background-color: #ffffff;
+                 border-radius: 100px;
+
+                 margin-left: -15px;
+
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+
+                 z-index: 1;
+
+                 transition: transform 0.5s linear;
+                 transform: translateX(-50px);
+
+                 margin-top: 1px;
+
+                 cursor: pointer;
+
+                 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.02), 0px 0px 0px 1px rgba(9, 30, 66, 0.08);
+
+                 &.showArrow {
+                     transform: translateX(20px) rotate(180deg);
+                 }
+             }
+         }
+     }
+
+     .home-page-doodle-cards-section {
+         height: 250px;
+         width: 100%;
+
+         .home-page-doodle-cards-wrapper {
+             width: 100%;
+             height: 100%;
+
+             display: flex;
+             flex-direction: row;
+             justify-content: space-between;
+
+             .home-page-doodle-cards-agency-section {
+                 width: 200px;
+                 height: 100%;
+
+                 background-color: #ffffff;
+
+                 border-radius: 20px;
+
+                 position: relative;
+                 box-shadow: 0px 9px 20px rgba(13, 38, 76, 0.19);
+
+                 .home-page-doodle-cards-agency-wrapper {
+                     width: fit-content;
+                     position: absolute;
+                     bottom: 10px;
+
+                     display: flex;
+                     flex-direction: row;
+                     align-items: center;
+                     justify-content: start;
+
+                     gap: 8px;
+
+                     margin-left: 10px;
+
+                     .home-page-doodle-cards-agency-images-wrapper {
+                         display: flex;
+                         flex-direction: row;
+                         margin-left: 20px;
+
+                         .home-page-doodle-cards-agency-image {
+                             height: 40px;
+                             width: 40px;
+
+                             border-radius: 100px;
+
+                             background-color: rgb(255, 255, 255);
+                             box-shadow: 0px 1px 1px rgba(9, 30, 66, 0.25), 0px 0px 1px 1px rgba(9, 30, 66, 0.13);
+                             margin-left: -15px;
+                         }
+                     }
+
+                     .home-page-doodle-cards-agency-count {
+                         font-size: 20px;
+                         font-weight: 500;
+                     }
+                 }
+             }
+
+             .home-page-doodle-cards-contact-section {
+                 width: 200px;
+                 height: 100%;
+
+                 background-color: #ffffff;
+
+                 border-radius: 20px;
+                 position: relative;
+
+                 box-shadow: 0px 9px 20px rgba(13, 38, 76, 0.19);
+
+                 .home-page-doodle-cards-contact-wrapper {
+                     position: absolute;
+
+                     left: 15px;
+                     bottom: 15px;
+                 }
+             }
+
+         }
+     }
+ }

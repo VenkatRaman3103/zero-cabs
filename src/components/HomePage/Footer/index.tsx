@@ -34,8 +34,6 @@ export const Footer = () => {
   )
 }
 
-
-
 export const Columns = ({ heading, footerLinks }: any) => {
 
   console.log(footerLinks, 'footerLinks')
